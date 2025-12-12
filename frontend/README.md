@@ -1,71 +1,16 @@
-# 🍬 Sweet Shop Management System
+# React + Vite
 
-A full-stack inventory and sales management system designed for sweet shops. This application allows administrators to manage stock, track sales, and provides a modern, responsive dashboard for viewing available sweets. Built with **Spring Boot (Java)** and **React**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Live Demo
-* **Frontend (Vercel):** [Link to your Vercel Deployment]
-* **Backend (Railway):** [Link to your Railway API]
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🛠️ Tech Stack
+## React Compiler
 
-### **Backend**
-* **Language:** Java 17
-* **Framework:** Spring Boot 3.3.0
-* **Security:** Spring Security + JWT (JSON Web Tokens)
-* **Database:** PostgreSQL (Production) / H2 (Testing)
-* **Testing:** JUnit 5, Mockito (TDD Approach)
-* **Tools:** Maven, Lombok
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### **Frontend**
-* **Framework:** React.js (Vite)
-* **Styling:** CSS3 (Custom Glassmorphism Design, Responsive Grid)
-* **Routing:** React Router DOM
-* **HTTP Client:** Axios
+## Expanding the ESLint configuration
 
----
-
-## ✨ Features
-
-* **User Authentication:** Secure Registration and Login using JWT.
-* **Inventory Dashboard:** Visual display of all sweets with auto-generated color coding.
-* **Stock Management:**
-    * **Add:** Admin interface to add new sweets with Price and Quantity.
-    * **Purchase:** Real-time stock reduction when items are "bought".
-    * **Delete:** Remove items from the inventory.
-* **Search & Filter:**
-    * Instant search bar to find sweets by name.
-    * Sorting functionality (Price: Low to High / High to Low).
-* **Responsive Design:** Works on desktop and mobile devices.
-
----
-
-## 📸 Screenshots
-
-*(Add your screenshots here by dragging images into your repo and linking them)*
-
-| Login Screen | Dashboard |
-| :---: | :---: |
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) |
-
----
-
-## ⚙️ Local Setup Instructions
-
-Follow these steps to run the project locally.
-
-### **1. Prerequisites**
-* Java JDK 17+
-* Node.js & npm
-* PostgreSQL (Installed and running)
-
-### **2. Database Setup**
-1. Open pgAdmin or your terminal.
-2. Create a new database named `sweetshop`.
-3. (Optional) The application will automatically seed default data (Ladoo, Barfi) if the table is empty.
-
-### **3. Backend Setup (Spring Boot)**
-
-```bash
-cd backend-api
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
