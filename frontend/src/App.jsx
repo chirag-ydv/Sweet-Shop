@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 
-const API_BASE = "http://localhost:8080/api";
+const API_BASE = "https://sweet-backend-deploy.onrender.com/api";
 
 const COLORS = [
   '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', 
